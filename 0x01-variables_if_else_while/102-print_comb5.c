@@ -19,7 +19,7 @@ int main(void)
 			int t2 = b / 10;
 			int u2 = b % 10;
 
-			if (u1 != u2 && u1 < u2)
+			if (a < b)
 				{
 				putchar(t1 + '0');
 				putchar(u1 + '0');
