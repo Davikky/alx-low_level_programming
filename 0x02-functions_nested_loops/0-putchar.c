@@ -5,7 +5,7 @@
  * main - Entry point
  *
  * @param i Initializes the loop
- * @param r Puts spell in order
+ * @param r Assigns the string to be printed
  *
  * Return: Always 0.
  */
@@ -16,7 +16,7 @@ int main(void)
 
 	char *r = "_putchar\n";
 
-	while (i < 9)
+	while (r[i] != '\0')
 		{
 		_putchar(r[i]);
 		i++;
