@@ -17,7 +17,7 @@ int main(void)
 
 	while (i < 9)
 		{
-		_putchar(*r[i]);
+		_putchar(r[i]);
 		i++;
 	}
 	return (0);
