@@ -13,11 +13,11 @@ int main(void)
 {
 	int i = 0;
 
-	char r = "_putchar\n";
+	char *r = "_putchar\n";
 
 	while (i < 9)
 		{
-		_putchar(r[i]);
+		_putchar(*r[i]);
 		i++;
 	}
 	return (0);
