@@ -11,11 +11,14 @@
 
 void print_array(int *a, int n)
 {
-	int i;
+	int i, j = 0;
+
+	while (a != NULL)
+		j++;
 
 	for (i = 0; i < n; i++)
 	{
-		if (n <= 0)
+		if (n != j)
 		{
 			printf("\n");
 		}
@@ -24,6 +27,8 @@ void print_array(int *a, int n)
 			printf("%d, ", a[i]);
 		}
 		else
+		{
 			printf("%d\n", a[i]);
+		}
 	}
 }
