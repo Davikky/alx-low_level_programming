@@ -1,6 +1,6 @@
 /*
  * File: 4-new_dog.c
- * Auth: Victor A.
+ * Auth: Victor A. Adeyemi
  * (c) April, 2023
  */
 
@@ -23,7 +23,7 @@ int _strlen(char *str)
 }
 
 /**
- * _strcopy - copies a string pointed to by 'out' into a string pointed to by 'in'
+ * _strcopy - copies a string using pointer to string
  * @out: string to be copied
  * @in: where to copy string to
  * Return: pointer to string 'in'
