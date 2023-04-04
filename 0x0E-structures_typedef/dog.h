@@ -20,12 +20,14 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
 /**
- * dog_t - typedef for stuct dog
+ * dog_t - typedef for struct dog
  */
 typedef struct dog dog_t;
 
-
-
+dog_t *new_dog(char *name, float age, char *owner);
+/* aids.h */
+int _strlen(char *str);
+char *_strcopy(char *in, char *out);
 
 
 #endif /* DOG_H */
