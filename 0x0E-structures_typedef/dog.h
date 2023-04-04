@@ -28,6 +28,6 @@ dog_t *new_dog(char *name, float age, char *owner);
 /* aids.h */
 int _strlen(char *str);
 char *_strcopy(char *in, char *out);
-
+void free_dog(dog_t *d);
 
 #endif /* DOG_H */
