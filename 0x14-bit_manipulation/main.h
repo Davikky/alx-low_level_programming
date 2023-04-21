@@ -4,8 +4,7 @@
 
 unsigned int binary_to_uint(const char *b);
 int _putchar(char c);
-int power(int base, unsigned int e);
-
+void print_binary(unsigned long int n);
 
 
 
