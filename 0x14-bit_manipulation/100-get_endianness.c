@@ -8,7 +8,7 @@
  */
 
 /**
- * get_endiannes - checks the endianness
+ * get_endianness - checks the endianness
  * Return: void
  */
 
