@@ -20,30 +20,22 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd = open(filename, O_WRONLY | O_APPEND);
-	ssize_t bytes_written = write(fd, text_content, _strlen(text_content));
+	int fd, wrt;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
-	if (text_content == NULL)
-	{
-		if (access(filename, F_OK) == 0)
-			return (1);
-		else
-			return (-1);
-	}
+	fd = open(filename, O_WRONLY | O_APPEND);
 
 	if (fd == -1)
 		return (-1);
 
-	if (text_content != NULL)
+	if (text_content)
 	{
-		if (bytes_written == -1)
-		{
-			close(fd);
+		wrt = write(fd, text_content, _strlen(text_content));
+
+		if (wrt == -1)
 			return (-1);
-		}
 	}
 
 	close(fd);
