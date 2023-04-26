@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
+#include "main.h"
 
 /**
  * append_text_to_file - appends text to the end of a file.
@@ -20,7 +21,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd = open(filename, O_WRONLY | O_APPEND);
-	ssize_t bytes_written = write(fd, text_content, strlen(text_content));
+	ssize_t bytes_written = write(fd, text_content, _strlen(text_content));
 
 	if (filename == NULL)
 		return (-1);
@@ -42,4 +43,20 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	close(fd);
 	return (1);
+}
+
+/**
+ * _strlen - returns length of a string
+ * @s: string provided
+ *
+ * Return: string length
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (s[count])
+		count++;
+
+	return (count);
 }
