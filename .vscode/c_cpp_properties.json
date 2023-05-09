@@ -22,18 +22,6 @@
                 "-std=gnu89"
             ],
             "intelliSenseMode": "gcc-x64"
-        },
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": ""
         }
     ],
     "version": 4
