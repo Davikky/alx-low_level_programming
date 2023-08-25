@@ -4,9 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** This header file contains prototypes of functions
- * contained in the dynamic library libdynamic.so
- **/
+/* This header file contains prototypes of functions */
+/* contained in the dynamic library libdynamic.so */
 
 int _putchar(char c);
 int _islower(int c);
